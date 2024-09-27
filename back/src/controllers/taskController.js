@@ -44,6 +44,7 @@ exports.updateStatus = async(req,res)=>{
     var response=  await Task.findByIdAndUpdate(id,{
         status:status
     })
+    
       
     res.status(204).json(response)
     } catch (error) {
